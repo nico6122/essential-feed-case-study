@@ -16,7 +16,7 @@ public final class RemoteFeedLoader: FeedLoader {
     public enum Error: Swift.Error {
         case connectivity
         case invaildData
-    }`
+    }
     
     public typealias Result = LoadFeedResult<Error>
     
