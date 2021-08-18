@@ -8,7 +8,7 @@
 import Foundation
 
 
-public final class RemoteFeedLoader{
+public final class RemoteFeedLoader: FeedLoader {
     
     private let url: URL
     private let client: HTTPClient
@@ -16,7 +16,7 @@ public final class RemoteFeedLoader{
     public enum Error: Swift.Error {
         case connectivity
         case invaildData
-    }
+    }`
     
     public typealias Result = LoadFeedResult<Error>
     
