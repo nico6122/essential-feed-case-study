@@ -42,7 +42,7 @@ class EssentialFeedAPIEndToEndTests: XCTestCase {
         
         let exp = expectation(description: "Wait for load completion")
         
-        var receivedResult: LoadFeedResult?
+        var receivedResult: LoadFeedResult? 
         loader.load{ result in
             receivedResult = result
             exp.fulfill()
